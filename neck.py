@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # --- API Key Setup ---
-genai.configure(api_key="YOUR_API_KEY_HERE")
+genai.configure(api_key="AIzaSyDoxhzy2x1T9iBto6GYoeF0Gm0ay3QGqQA")
 
 # --- Gemini Model Setup ---
 model = genai.GenerativeModel("gemini-pro")
@@ -36,3 +36,4 @@ if submit and topic:
 
 elif submit:
     st.warning("⚠️ Please enter a topic before generating.")
+
