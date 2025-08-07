@@ -24,7 +24,7 @@ if submit and topic:
     with st.spinner("Generating content..."):
         prompt = (
             f"Generate an {content_type} for the topic '{topic}' for students aged {age}. "
-            f"The subject is {subject} and difficulty level is {level}. use max 200 words "
+            f"The subject is {subject} and difficulty level is {level}. use max 500 words "
             f"Make it fun, age-appropriate, and engaging."
         )
         try:
@@ -36,6 +36,7 @@ if submit and topic:
 
 elif submit:
     st.warning("⚠️ Please enter a topic before generating.")
+
 
 
 
