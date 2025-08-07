@@ -5,7 +5,7 @@ import google.generativeai as genai
 genai.configure(api_key="AIzaSyDoxhzy2x1T9iBto6GYoeF0Gm0ay3QGqQA")
 
 # --- Gemini Model Setup ---
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 # --- App UI ---
 st.set_page_config(page_title="EduContent AI", page_icon="📚")
@@ -36,4 +36,5 @@ if submit and topic:
 
 elif submit:
     st.warning("⚠️ Please enter a topic before generating.")
+
 
